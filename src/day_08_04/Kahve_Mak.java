@@ -86,24 +86,81 @@ String boyut oluşturun...
  public static void main(String[] args) {
      Scanner scan = new Scanner(System.in);
      System.out.println("Hangi kahveyi istersiniz?" + "\nTürk kahvesi" + "\nFiltre Kahve" + "\nEspresso");
-     System.out.println("icmek istediginiz kahvenin adini tam yaziniz");
-     String hangiKahve = scan.nextLine();
+
+     String hangiKahve;
 
 
      while (true) {
+         System.out.println("icmek istediginiz kahvenin adini tam yaziniz");
+         hangiKahve= scan.nextLine();
          if (hangiKahve.equalsIgnoreCase("Turk Kahvesi") || hangiKahve.equalsIgnoreCase("Türk Kahvesi")) {
              System.out.println("Turk kahvesi hazirlaniyor...");
+             break;
          } else if (hangiKahve.equalsIgnoreCase("Filtre kahve")) {
              System.out.println(" Filtre kahve hazirlaniyor...");
+             break;
 
          } else if (hangiKahve.equalsIgnoreCase("Espresso")) {
              System.out.println("Espresso hazirlaniyor...");
+             break;
 
          } else {
              System.out.println("hatali giris yaptiniz");
-             continue;
          }
      }
+
+     while (true) {
+         System.out.println("Süt eklememizi ister misiniz ? (Evet veya Hayır olarak cevaplayınız)");
+         String sut = scan.nextLine();
+         if (sut.equalsIgnoreCase("evet")) {
+             System.out.println("Sut ekleniyor");
+             break;
+         } else if (sut.equalsIgnoreCase("Hayir")) {
+             System.out.println("Sut eklenmiyor");
+             break;
+         } else {
+             System.out.println("Hatali giris yaptiniz lütfen sadece evet vaya hayir giriniz");
+         }
+     }
+
+     while (true){
+         System.out.println("Seker eklememizi ister misiniz ? (Evet veya Hayır olarak cevaplayınız)");
+         String seker= scan.nextLine();
+
+         if (seker.equalsIgnoreCase("Evet")){
+             System.out.println("kac seker olsun?");
+             int kacSeker= scan.nextInt();
+             System.out.println(kacSeker+ "seker ekleniyor");
+             break;
+         } else if (seker.equalsIgnoreCase("hayir")) {
+             System.out.println("Seker eklenmiyor");
+             break;
+         }else {
+             System.out.println("hatali giris yaptiniz, bastan baslayiniz");
+         }
+     }
+      String boyut;
+      while (true){
+          System.out.println("Hangi boyutta olsun? (Büyük boy - orta boy - küçük boy olarak giriniz.");
+          boyut= scan.nextLine();
+          if (boyut.equalsIgnoreCase("büyük boy")||boyut.equalsIgnoreCase("buyuk boy")){
+              System.out.println("kahveniz "+boyut+ " hazirlaniyor");
+              break;
+          } else if (boyut.equalsIgnoreCase("kücük boy")||boyut.equalsIgnoreCase("kucuk boy")) {
+              System.out.println("kahveniz "+boyut+ " hazirlaniyor");
+              break;
+          } else if (boyut.equalsIgnoreCase("orta boy")){
+              System.out.println("kahveniz "+boyut+ " hazirlaniyor");
+              break;
+          }else {
+              System.out.println("hatali giris yaptiniz");
+          }
+      }
+
+     System.out.println(hangiKahve+boyut+ "  hazirdir, Afiyet olsun!!!");
+
+
+
  }
 
 }
