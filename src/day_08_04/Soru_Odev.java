@@ -22,7 +22,7 @@ public class Soru_Odev {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Isim ve Soyisim giriniz:");
+        System.out.println("Iki kelime seklinde Isim ve Soyisim giriniz:");
         String isimsoyisim = scan.nextLine().trim();
 
        //Array ile cözüm
@@ -36,13 +36,14 @@ public class Soru_Odev {
         String isim = isimsoyisim.substring(0, 1).toUpperCase() +
                 isimsoyisim.substring(1, isimsoyisim.indexOf(" ")).toLowerCase(); //bosluk soyadin önunde kaldi
         String soyisim = isimsoyisim.substring(isimsoyisim.indexOf(" ") + 1).toUpperCase(); //bosluk olmasin, +1 den baslattik
+
         String sy= isimsoyisim.substring(isimsoyisim.indexOf(" ") + 1,isimsoyisim.indexOf(" ")+2 ).toUpperCase()+
                 isimsoyisim.substring(isimsoyisim.indexOf(" ")+2).toLowerCase() ;
 
        // String soyisim1= isimsoyisim.substring(isimsoyisim.indexOf(" ")); oldugu gibi
       //  System.out.println(isim);
        // System.out.println(soyisim);
-       System.out.println("Isim: " + isim + "\nSoyisim: " + soyisim +"\nSY "+ sy); //tek satirda aldik
+       System.out.println("Isim: " + isim + "\nSoyisim: " + soyisim +"\nSY: "+ sy); //tek satirda aldik
 
         //Substring metodu üzerinde islem yapilan stringin
         // bir parcasini bize geri döndürür. iki farkli olanak sunar.
