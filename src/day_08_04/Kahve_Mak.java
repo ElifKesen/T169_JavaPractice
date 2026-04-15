@@ -139,6 +139,33 @@ String boyut oluşturun...
              System.out.println("hatali giris yaptiniz, bastan baslayiniz");
          }
      }
+
+ /*
+     while (true) {
+         System.out.println("Şeker eklememizi ister misiniz? (Evet/Hayır)");
+         String seker = scan.nextLine();
+
+         if (seker.equalsIgnoreCase("Evet")) {
+             System.out.println("Kaç şeker olsun?");
+
+             try {
+                 int kacSeker = Integer.parseInt(scan.nextLine()); // Hem sayıya çevirir hem Enter'ı temizler
+                 System.out.println(kacSeker + " şeker ekleniyor.");
+                 break;
+             } catch (NumberFormatException e) {
+                 System.out.println("Lütfen sadece rakam giriniz!");
+                 // break demediğimiz için soruyu (Şeker ister misiniz?) tekrar sorar.
+             }
+
+         } else if (seker.equalsIgnoreCase("hayir")) {
+             System.out.println("Şeker eklenmiyor.");
+             break;
+         } else {
+             System.out.println("Hatalı giriş! Lütfen 'Evet' veya 'Hayır' yazınız.");
+         }
+     }
+  */
+
       String boyut;
       while (true){
           System.out.println("Hangi boyutta olsun? (Büyük boy - orta boy - küçük boy olarak giriniz.");
