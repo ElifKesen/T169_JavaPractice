@@ -70,7 +70,6 @@ public class AracKiralamaSon {
         }
 
         //Sigorta
-        scan.nextLine();
         String sigorta="";
         while (true) {
             System.out.println("Tam kasko ister misiniz? (Evet / Hayır seklinde cevap veriniz): ");
@@ -87,7 +86,7 @@ public class AracKiralamaSon {
 
             } else {
                 //e vaya h seklinde bir harf olarak girerse
-                System.out.println("Lütfen sadece 'Evet' veya 'Hayır' yazınız." + sigorta + " gecerli cevap degildir");
+                System.out.println("Lütfen sadece 'Evet' veya 'Hayır' yazınız. " + sigorta + " gecerli cevap degildir");
             }
         }
 

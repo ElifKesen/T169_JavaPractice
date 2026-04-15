@@ -154,7 +154,7 @@ String boyut oluşturun...
                  break;
              } catch (NumberFormatException e) {
                  System.out.println("Lütfen sadece rakam giriniz!");
-                 // break demediğimiz için soruyu (Şeker ister misiniz?) tekrar sorar.
+                 // break demediğimiz için soruyu (Şeker eklememizi ister misiniz?) tekrar sorar.
              }
 
          } else if (seker.equalsIgnoreCase("hayir")) {
