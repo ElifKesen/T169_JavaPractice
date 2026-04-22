@@ -27,8 +27,9 @@ public class SayiTahminOyunu {
             }else {
                 System.out.println("Daha büyük sayi tahmin etmelisiniz");
             }
-           // kullanicininSayisi=scan.nextInt();
+           //kullanicininSayisi=scan.nextInt();
 
+            // kullanici rakam harici giris yaparsa diye burayi yazdik
             while (true){
                 System.out.println("Tahmininizi yazin");
                 String input= scan.nextLine(); //Sayiyi String aliyoruz cünkü, kullanici harf girebilir,
