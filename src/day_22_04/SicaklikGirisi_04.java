@@ -8,11 +8,7 @@ public class SicaklikGirisi_04 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        double maxSicaklik = Double.MIN_VALUE;
-        double minSicaklik = Double.MAX_VALUE;
-
         ArrayList<Double>gununSicaklikDegerleri=new ArrayList<>();
-
 
         System.out.println("Sicaklik degerlerini tek tek giriniz, veri girisini sonlandirmak icin e yaziniz");
         System.out.println("---------------");
